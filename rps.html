@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Rock Paper Scissors
+        </title>
+    </head>
+    <body>
+        <button onclick="
+            pickComputerMove();
+            ">Rock</button>
+        <button>Paper</button>
+        <button>Scissors</button>
+        <script>
+            function pickComputerMove(){
+                let computerMove = '';
+                const numberPick= Math.random();
+
+                if(numberPick < (1/3)){
+                    computerMove = 'Rock';
+                }else if (numberPick <= (2/3) && numberPick > (1/3)){
+                    computerMove = 'Paper';
+                }else if (numberPick > (2/3)){
+                    computerMove = 'Scissors'
+                }
+                 console.log(numberPick);   
+
+                console.log(computerMove);
+            }
+        </script>
+    </body>
+</html>
